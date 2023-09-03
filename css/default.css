@@ -57,3 +57,7 @@ div.info {
     font-size: 14px;
     font-style: italic;
 }
+
+.nobull {
+  list-style-type: none;
+}
