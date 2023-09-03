@@ -1,3 +1,6 @@
+html {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
 body {
     color: black;
     font-size: 16px;
@@ -29,7 +32,7 @@ div#header #navigation a {
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 div#footer {
