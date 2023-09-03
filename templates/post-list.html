@@ -1,7 +1,10 @@
-<ul class="nobull">
+<table>
+  <tbody>
     $for(posts)$
-        <li>
-            <i>$date$</i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="$url$">$title$</a>
-        </li>
+        <tr>
+          <td><i>$date$</i></td>
+	  <td><a href="$url$">$title$</a></td>
+        </tr>
     $endfor$
-</ul>
+  </tbody>
+</table>
