@@ -1,6 +1,7 @@
 html {
   font-family: -apple-system, Helvetica, arial, sans-serif;
 }
+
 body {
     color: black;
     font-size: 16px;
@@ -17,7 +18,7 @@ div#header {
 div#logo a {
     color: black;
     float: left;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -38,7 +39,7 @@ div#header #navigation a {
 div#footer {
     border-top: solid 2px black;
     color: #555;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
     text-align: right;
@@ -59,6 +60,8 @@ div.info {
 }
 
 td {
-  padding-bottom: 5px;
-  padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
