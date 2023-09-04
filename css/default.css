@@ -14,7 +14,7 @@ body {
 }
 
 div#content {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 div#header {
@@ -26,13 +26,14 @@ div#header {
 div#logo a {
     color: black;
     float: left;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     text-decoration: none;
 }
 
 div#header #navigation {
     text-align: right;
+    margin-top: 20px;
 }
 
 div#header #navigation a {
