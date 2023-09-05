@@ -35,6 +35,13 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
+    match "notes/*" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler'
+            >>= loadAndApplyTemplate "templates/note.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+
     create ["archive.html"] $ do
         route idRoute
         compile $ do
