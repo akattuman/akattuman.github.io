@@ -2,4 +2,4 @@
 title: Notes
 ---
 
-[under construction]
+[no index yet]

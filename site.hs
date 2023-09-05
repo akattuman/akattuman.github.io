@@ -1,13 +1,19 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
-import           Hakyll
-import Text.Pandoc.Highlighting (Style, haddock, styleToCss)
-import Text.Pandoc.Options      (ReaderOptions (..), WriterOptions (..))
-
-
+import            Data.Monoid (mappend)
+import            Hakyll
+import            Text.Pandoc.Highlighting        (Style, haddock, styleToCss)
+import            Text.Pandoc.Options             (ReaderOptions (..), WriterOptions (..))
+import            Text.Pandoc.Templates
+import            Text.Pandoc.Class
+import            Text.Blaze.Html                 (toHtml, toValue, (!))
+import            Text.Blaze.Html.Renderer.String (renderHtml)
+import            Text.Blaze.Html5.Attributes     (href, class_)
+import            Data.Text                       (pack)
+import            Data.Either                     (fromRight)
+import qualified  Text.Blaze.Html5                as H
 --------------------------------------------------------------------------------
-config :: Configuration
+
 config = defaultConfiguration
   { destinationDirectory = "docs"
   }
@@ -37,7 +43,7 @@ main = hakyllWith config $ do
 
     match "notes/*" $ do
         route $ setExtension "html"
-        compile $ pandocCompiler'
+        compile $ pandocCompilerWith defaultHakyllReaderOptions withTOC
             >>= loadAndApplyTemplate "templates/note.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
@@ -94,3 +100,23 @@ pandocCompiler' =
     defaultHakyllWriterOptions
       { writerHighlightStyle   = Just pandocCodeStyle
       }
+
+withTOC :: WriterOptions
+withTOC = defaultHakyllWriterOptions
+        { writerTableOfContents = True
+        , writerNumberSections  = True
+        , writerTOCDepth        = 4
+        , writerTemplate        =
+         let
+            toc = "$toc$" :: String
+            body = "$body$" :: String
+            html = pack . renderHtml $ do
+                     H.div ! class_ "toc" $
+                        toHtml toc
+                     toHtml body
+            template  =  fromRight mempty <$> compileTemplate "" html
+            runPureWithDefaultPartials = runPure . runWithDefaultPartials
+            eitherToMaybe = either (const Nothing) Just
+         in
+            eitherToMaybe (runPureWithDefaultPartials template)
+        }
