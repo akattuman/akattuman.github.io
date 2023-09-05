@@ -33,9 +33,11 @@ div#logo a {
     font-weight: bold;
     text-decoration: none;
     margin-top: 0px;
+    clear: right;
 }
 
 div#header #navigation {
+    float: right;
     text-align: right;
     margin-top: 17px;
 }
