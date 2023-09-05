@@ -10,7 +10,7 @@ I have not defined the terms 'blog post' and 'evergreen note' (yet).
 
 ## Beyond Writing?
 
-There's a blurry line between piece of writing and a piece of writing on the internet with interactive features. At a certain threshold, the interactivity becomes a load-bearing aspect of the writing[^alt-text]; these forms are beyond the scope of this note[^twitter-thread].
+There's a blurry line between piece of writing with minor multimedia features, and an interactive experience on the internet. At a certain threshold, the interactivity becomes a load-bearing aspect of the piece[^alt-text]; these forms are beyond the scope of this note[^twitter-thread].
 
 # Function
 
@@ -63,8 +63,10 @@ In the case of a blog, the role of the author is larger[^author-metadata] and so
 
 ## Indexing
 
-A chronological list is a meaningful way to view blog posts, but there is no obvious structure through which to view a set of notes. This leaves a difficult question of how to surface them.
+A chronological list is a meaningful way to view blog posts, but there is no obvious structure through which to view a set of notes. This leaves a difficult question of how to surface them:
 
+- [Roam Research](https://roamresearch.com/) gives you a graph overview, but this can become unwieldy at scale.
+- [Andy Matuschak](https://andymatuschak.org/) does not provide an 'index or navigational aids' for his notes, but offers a 'What's top of mind' note as an entry point for traversing through the links.
 
 [^alt-text]: One litmus test might be 'can you replace the interactive components with some kind of alt text and still make sense of the writing?' An example that should pass this test is a blog post with an embedded video. An example that should fail might be some kind of a visualiser to scrub through different versions of a piece of writing.
 

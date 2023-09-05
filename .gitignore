@@ -20,4 +20,5 @@ cabal.sandbox.config
 _cache/
 _site/
 .DS_Store
+*.sh
 
