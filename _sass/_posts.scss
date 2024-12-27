@@ -1,0 +1,91 @@
+.writing {
+    font-size: 13.5pt;
+    color: black;
+    // text-align: justify;
+    #back {
+        color: navy;
+    }
+    a {
+        color: lightslategray;
+    }
+    #date {
+        text-align: center;
+        color: gray;
+        font-size: 12pt;
+        padding-top: 10px;
+    }
+    #markdown-toc {
+        a {
+            color: navy;
+        }
+        padding-bottom: 20px;
+        li {
+            ul {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .title {
+        padding-top: 20px;
+        font-size: 20pt;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+    h1 {
+        font-weight: bold;
+        font-size: 18pt;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 16pt;
+        font-weight: bold;
+        padding-top: 16px;
+    }
+    h3 {
+        font-weight: bold;
+    }
+    .caption {
+        font-size: 12pt;
+        color: gray;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #center {
+            text-align: center;
+    }
+    .twitter-tweet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    #img-50 {
+        width: 50%;
+    }
+    #img-80 {
+        width: 80%;
+    }
+    #img-70 {
+        width: 70%;
+    }
+    #img-90 {
+        width: 90%;
+    }
+    #img-40 {
+        width: 40%;
+    }
+    #img-60 {
+        width: 60%;
+    }
+}
+

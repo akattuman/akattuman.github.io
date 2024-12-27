@@ -1,0 +1,39 @@
+<head>
+  {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+  {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="{{ resource_url }}" />
+
+  <!-- Basic meta elements -->
+  <meta charset="utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <!-- Mathjax Support -->
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <title>
+      AK &middot; {{ page.title }}
+  </title>
+
+  {% seo title=false %}
+  
+  <!-- Description is dependent on page type  -->
+  {% if page.layout == "default" %}
+    <meta property="og:description" content="{{ site.description }}">
+    <meta name="twitter:description" value="{{ site.description }}" />
+    <meta property="og:type" content="website" />
+  {% else %}
+    <meta property="og:description" content="{{ page.description }}">
+    <meta name="twitter:description" value="{{ page.description }}" />
+    <meta property="og:type" content="article" />
+  {% endif %}
+  
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+
+</head>

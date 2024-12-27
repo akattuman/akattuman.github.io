@@ -1,0 +1,50 @@
+# Setup
+title:               akattuman 
+tagline:             ''
+description:         ""
+url:                 'https://akattuman.github.io'
+baseurl:             ''
+
+# About/contact
+author:
+  name: Anthony Kattuman
+  url: https://akattuman.github.io
+
+# Permalinks
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: UTF-8
+
+# Collections for texts
+collections:
+  writing: 
+    output: true
+  
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  # enable_coderay: false
+
+# Exclusions from the final site
+exclude:
+  - ed..gemspec
+  - Gemfile
+  - Gemfile.lock
+
+# Theme
+# (Used for local or custom-server deployments)
+# Uncomment the `theme` line if using the Ed. theme gem on your own computer or server.
+# See https://jekyllrb.com/docs/themes/
+# theme: "ed."
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -1,0 +1,363 @@
+/* Ed: the minimal edition theme.
+ * ___________________
+ * \_   _____/\______ \
+ *  |    __)_  |    |  \
+ *  |        \ |    `   \
+ * /_______  //_______  /
+ *         \/         \/
+ * Designed, built, and released under an MIT license by @elotroalex and brill friends. See credits
+ * for more info.
+ * Based on the Poole and Lanyon theme by @mdo. Learn more at
+ * https://github.com/minicomp/ed.
+*/
+
+/*
+  To apply a different color scheme to the whole scroll down to the themes section instructions at
+  the very bottom of this file
+*/
+
+
+/*
+  General
+
+  Update the foundational and global aspects of the page.
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: $main-font;
+  font-size: 13pt;
+  line-height: 1.5;
+}
+
+@media (min-width: 38em) {
+  html {
+    font-size: $regular-font-size;
+  }
+}
+
+body {
+  color: $text-color;
+  //background-color: #fff;
+  background-color: rgb(249, 244, 242);
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+.content {
+  margin-bottom: 4rem;
+}
+
+
+/*
+  Wrapper
+
+  The wrapper is used to position site content when the sidebar is toggled. We use an outter wrap to
+  position the sidebar without interferring with the regular page content.
+*/
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+
+/*
+  Container
+
+  Center the page content.
+*/
+
+.container {
+  max-width: 32rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+    // max-width: 41rem;
+    //text-align: justify;
+  }
+}
+
+/* Links */
+a {
+  color: $link-color;
+  border-bottom: solid;
+  text-decoration: none;
+  transition: all ease 0.1s;
+}
+
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  color: #555;
+  border-bottom-color: transparent;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: $heading-color;
+  letter-spacing: -.025rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h1.text-title {
+  font-size: 1.4rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+h3, h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style: circle;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Horizontal ruler */
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #999;
+}
+
+/* Search highlighting */
+mark {
+  color: white;
+  background-color: $link-color;
+}
+
+/* Quotes */
+blockquote {
+  padding: 0rem 1.5rem 0rem 2rem;
+  margin: 0 0 20px 0;
+  color: $text-color;
+  border-left: solid 2px navy;
+  // font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  //margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+#caption {
+  font-size: 10pt;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+
+/*
+  Masthead
+
+  Super small header above the content for site name and short description.
+*/
+
+.masthead {
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  #name{
+    padding-top: 11px;
+    padding-bottom: 10px;
+    color: black;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    clear: right;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  .span {
+    float: right;
+    text-align: right;
+    text-transform: lowercase;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    a {
+      color: #777;
+      font-size: 18px;
+      margin-left: 12px;
+      transition: all ease 0.1s;
+      border-bottom: none;
+    }
+    a:hover {
+      color: #333;
+    }
+    a:active {
+      color: black;
+    }
+  }
+}
+
+.masthead-hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 100%;
+}
+
+
+/*
+ ED special layouts
+*/
+
+p.centered {
+  text-align: center;
+}
+
+p.larger {
+  font-size: 1.6rem;
+}
+
+p.large {
+  font-size: 1.4rem
+}
+
+p.small {
+  font-size: 0.8rem;
+}
+
+div.toc {
+  margin-bottom: 4rem;
+}
+
+
+/* Footnotes styles */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+.footnotes {
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: .01rem;
+}
+
+.footnotes .foot-block {
+  display: inline-block;
+  padding: 0 4rem 0 2rem;
+  margin-bottom: .8rem;
+  font-style: italic;
+}
+
+a.footnote {
+  padding-left: .1rem;
+  font-size: .66rem;
+}
+
+/*Bibliography styles */
+ol.bibliography {
+  list-style-type:none;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+/* Diplomatic editions */
+ins,
+.add {
+  color:#288828;
+  font-style: italic;
+}
+
+del,
+.delete {
+  text-decoration: line-through;
+  //color: #AA3232;
+}
+
+u,
+.underline {
+  text-decoration: underline;
+}
+
+

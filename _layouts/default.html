@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+
+    <!--
+      Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS
+      collisions with our real content.
+    -->
+    <div class="wrap">
+      <header class="masthead">
+        <div class="container">
+          <a id='name' href="{% link index.md %}">Anthony Kattuman</a>
+          <div class="span">
+            <a id='nav' href="{% link writing.md %}">Writing</a>
+            <a id='nav' href="{% link links.md %}">Links</a>
+          </div>
+          <hr class="masthead-hr">
+        </div>
+      </header>
+
+      <main class="container content" id="main">
+        {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" href="http' }} <!-- "> -->
+      </main>
+
+      <!-- Footer  -->
+      <div class="container" id="footer">
+        <!--hr-->
+      </div>
+    </div>
+
+  </body>
+</html> 
