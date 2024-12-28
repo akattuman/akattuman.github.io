@@ -4,6 +4,6 @@ layout: default
 
 <article class="writing">
   <p class='title'>{{ page.title }}</p> 
-  <p id="date">{{ page.date | date: '%B %d, %Y'}}{% if page.updated != nil %}; Updated {{ page.updated | date: '%B %d, %Y'}}{% endif %}</p> 
+  <p id="date">{{ page.date | date: '%B %e, %Y'}}{% if page.updated != nil %}; Updated {{ page.updated | date: '%B %d, %Y'}}{% endif %}</p> 
   {{ content }}
 </article>

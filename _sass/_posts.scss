@@ -1,22 +1,13 @@
 .writing {
-    font-size: 13.5pt;
-    color: black;
-    // text-align: justify;
-    #back {
-        color: navy;
-    }
-    a {
-        color: lightslategray;
-    }
     #date {
         text-align: center;
-        color: gray;
+        color: #555;
         font-size: 12pt;
         padding-top: 10px;
     }
     #markdown-toc {
         a {
-            color: navy;
+            color: $link-color;
         }
         padding-bottom: 20px;
         li {

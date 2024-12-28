@@ -18,7 +18,7 @@ title: Writing
             {% else %}
                 {% assign thisUrl = post.url %}
             {% endif %}
-            {{ post.date | date: "%b %d"}} - <a href="{{ thisUrl }}">{{ post.title }}</a>
+            {{ post.date | date: "%b %e"}} - <a href="{{ thisUrl }}">{{ post.title }}</a>
             <i>{% if post.external_source != nil %}({{ post.external_source }}){% endif %}</i>
         </li>
       {% endfor %}

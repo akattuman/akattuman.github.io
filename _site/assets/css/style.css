@@ -584,69 +584,62 @@ pre code {
 .highlight pre {
   margin-bottom: 0; }
 
-.writing {
-  font-size: 13.5pt;
-  color: black; }
-  .writing #back {
-    color: navy; }
-  .writing a {
-    color: lightslategray; }
-  .writing #date {
-    text-align: center;
-    color: gray;
-    font-size: 12pt;
-    padding-top: 10px; }
-  .writing #markdown-toc {
-    padding-bottom: 20px; }
-    .writing #markdown-toc a {
-      color: navy; }
-    .writing #markdown-toc li ul {
-      padding-bottom: 0;
-      margin-bottom: 0; }
-  .writing .title {
-    padding-top: 20px;
-    font-size: 20pt;
-    text-align: center;
+.writing #date {
+  text-align: center;
+  color: #555;
+  font-size: 12pt;
+  padding-top: 10px; }
+.writing #markdown-toc {
+  padding-bottom: 20px; }
+  .writing #markdown-toc a {
+    color: #00008B; }
+  .writing #markdown-toc li ul {
     padding-bottom: 0;
-    margin-bottom: 0;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto; }
-  .writing h1 {
-    font-weight: bold;
-    font-size: 18pt;
-    padding-bottom: 15px;
-    padding-top: 20px; }
-  .writing h2 {
-    font-size: 16pt;
-    font-weight: bold;
-    padding-top: 16px; }
-  .writing h3 {
-    font-weight: bold; }
-  .writing .caption {
-    font-size: 12pt;
-    color: gray;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .writing #center {
-    text-align: center; }
-  .writing .twitter-tweet {
-    margin-left: auto;
-    margin-right: auto; }
-  .writing img {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto; }
-  .writing #img-50 {
-    width: 50%; }
-  .writing #img-80 {
-    width: 80%; }
-  .writing #img-70 {
-    width: 70%; }
-  .writing #img-90 {
-    width: 90%; }
-  .writing #img-40 {
-    width: 40%; }
-  .writing #img-60 {
-    width: 60%; }
+    margin-bottom: 0; }
+.writing .title {
+  padding-top: 20px;
+  font-size: 20pt;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto; }
+.writing h1 {
+  font-weight: bold;
+  font-size: 18pt;
+  padding-bottom: 15px;
+  padding-top: 20px; }
+.writing h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  padding-top: 16px; }
+.writing h3 {
+  font-weight: bold; }
+.writing .caption {
+  font-size: 12pt;
+  color: gray;
+  margin-left: 20px;
+  margin-right: 20px; }
+.writing #center {
+  text-align: center; }
+.writing .twitter-tweet {
+  margin-left: auto;
+  margin-right: auto; }
+.writing img {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; }
+.writing #img-50 {
+  width: 50%; }
+.writing #img-80 {
+  width: 80%; }
+.writing #img-70 {
+  width: 70%; }
+.writing #img-90 {
+  width: 90%; }
+.writing #img-40 {
+  width: 40%; }
+.writing #img-60 {
+  width: 60%; }
