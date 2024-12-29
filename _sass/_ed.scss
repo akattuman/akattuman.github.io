@@ -97,10 +97,8 @@ body {
   }
 }
 
-/* Links */
 a {
   color: $link-color;
-  border-bottom: transparent;
   text-decoration: none;
   transition: all ease 0.1s;
 }
@@ -108,7 +106,7 @@ a {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  border-bottom: solid;
+  text-decoration: underline;
 }
 
 /* Headings */
@@ -254,7 +252,7 @@ tbody tr:nth-child(odd) th {
       font-size: 18px;
       margin-left: 12px;
       transition: all ease 0.1s;
-      border-bottom: none;
+      text-decoration: none;
     }
     a:hover {
       color: #333;

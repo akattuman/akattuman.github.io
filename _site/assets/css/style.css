@@ -84,17 +84,15 @@ body {
 @media (min-width: 56em) {
   .container {
     max-width: 38rem; } }
-/* Links */
 a {
   color: #00008B;
-  border-bottom: transparent;
   text-decoration: none;
   transition: all ease 0.1s; }
 
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  border-bottom: solid; }
+  text-decoration: underline; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -213,7 +211,7 @@ tbody tr:nth-child(odd) th {
       font-size: 18px;
       margin-left: 12px;
       transition: all ease 0.1s;
-      border-bottom: none; }
+      text-decoration: none; }
     .masthead .span a:hover {
       color: #333; }
     .masthead .span a:active {
