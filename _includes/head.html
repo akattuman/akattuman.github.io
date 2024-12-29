@@ -18,22 +18,7 @@
   <title>
       AK &middot; {{ page.title }}
   </title>
-
-  {% seo title=false %}
   
-  <!-- Description is dependent on page type  -->
-  {% if page.layout == "default" %}
-    <meta property="og:description" content="{{ site.description }}">
-    <meta name="twitter:description" value="{{ site.description }}" />
-    <meta property="og:type" content="website" />
-  {% else %}
-    <meta property="og:description" content="{{ page.description }}">
-    <meta name="twitter:description" value="{{ page.description }}" />
-    <meta property="og:type" content="article" />
-  {% endif %}
-  
-
-  <!-- CSS link -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 
 </head>
