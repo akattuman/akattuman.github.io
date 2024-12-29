@@ -100,7 +100,7 @@ body {
 /* Links */
 a {
   color: $link-color;
-  border-bottom: solid;
+  border-bottom: transparent;
   text-decoration: none;
   transition: all ease 0.1s;
 }
@@ -108,8 +108,7 @@ a {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #555;
-  border-bottom-color: transparent;
+  border-bottom: solid;
 }
 
 /* Headings */
@@ -163,15 +162,9 @@ ul, ol {
 hr {
   position: relative;
   margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #777;
-  border-bottom: 1px solid #999;
-}
-
-/* Search highlighting */
-mark {
-  color: white;
-  background-color: $link-color;
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 100%;
 }
 
 /* Quotes */
@@ -271,13 +264,6 @@ tbody tr:nth-child(odd) th {
     }
   }
 }
-
-.masthead-hr {
-  border: none;
-  border-top: 2px solid #ccc;
-  width: 100%;
-}
-
 
 /*
  ED special layouts

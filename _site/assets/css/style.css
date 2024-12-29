@@ -87,15 +87,14 @@ body {
 /* Links */
 a {
   color: #00008B;
-  border-bottom: solid;
+  border-bottom: transparent;
   text-decoration: none;
   transition: all ease 0.1s; }
 
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #555;
-  border-bottom-color: transparent; }
+  border-bottom: solid; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -139,14 +138,9 @@ ul, ol {
 hr {
   position: relative;
   margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #777;
-  border-bottom: 1px solid #999; }
-
-/* Search highlighting */
-mark {
-  color: white;
-  background-color: #00008B; }
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 100%; }
 
 /* Quotes */
 blockquote {
@@ -224,11 +218,6 @@ tbody tr:nth-child(odd) th {
       color: #333; }
     .masthead .span a:active {
       color: black; }
-
-.masthead-hr {
-  border: none;
-  border-top: 2px solid #ccc;
-  width: 100%; }
 
 /*
  ED special layouts
@@ -643,3 +632,19 @@ pre code {
   width: 40%; }
 .writing #img-60 {
   width: 60%; }
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12pt; }
+  .archive-list li {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px; }
+
+.archive-date {
+  color: #555;
+  min-width: 100px;
+  text-align: right;
+  margin-right: 30px; }
