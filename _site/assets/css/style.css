@@ -1,15 +1,4 @@
-/*
-  Common Variables
-
-  Feel free to change!
-*/
-/* Fonts */
 /*1.25em; /* 20px / 16px = 1.25em; support text resizing in all browsers */
-/*
-  Color
-
-  Make sure to leave color-scheme in `_config.yml` file empty for granular control
-*/
 /* Ed: the minimal edition theme.
  * ___________________
  * \_   _____/\______ \
@@ -610,26 +599,11 @@ pre code {
   margin-right: 20px; }
 .writing #center {
   text-align: center; }
-.writing .twitter-tweet {
-  margin-left: auto;
-  margin-right: auto; }
 .writing img {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: auto; }
-.writing #img-50 {
-  width: 50%; }
-.writing #img-80 {
-  width: 80%; }
-.writing #img-70 {
-  width: 70%; }
-.writing #img-90 {
-  width: 90%; }
-.writing #img-40 {
-  width: 40%; }
-.writing #img-60 {
-  width: 60%; }
 
 .archive-list {
   list-style: none;
