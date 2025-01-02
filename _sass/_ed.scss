@@ -38,7 +38,7 @@ body {
 
 html {
   font-family: $main-font;
-  font-size: 13pt;
+  font-size: $regular-font-size;
   line-height: 1.5;
 }
 
@@ -82,6 +82,7 @@ body {
 
 .container {
   max-width: 32rem;
+  min-width: 28rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;

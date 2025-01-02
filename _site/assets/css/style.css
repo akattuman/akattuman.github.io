@@ -65,6 +65,7 @@ body {
 */
 .container {
   max-width: 32rem;
+  min-width: 28rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -563,8 +564,9 @@ pre code {
 .writing #date {
   text-align: center;
   color: #555;
-  font-size: 12pt;
-  padding-top: 10px; }
+  font-size: 11pt;
+  padding-top: 5px;
+  padding-bottom: 15px; }
 .writing #markdown-toc {
   padding-bottom: 20px; }
   .writing #markdown-toc a {
@@ -573,12 +575,12 @@ pre code {
     padding-bottom: 0;
     margin-bottom: 0; }
 .writing .title {
-  padding-top: 20px;
+  padding-top: 0px;
   font-size: 20pt;
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
-  width: 80%;
+  width: 85%;
   margin-right: auto;
   margin-left: auto; }
 .writing h1 {
