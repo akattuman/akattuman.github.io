@@ -18,6 +18,8 @@ encoding: UTF-8
 
 # Collections for texts
 collections:
+  notes:
+    output: true
   writing: 
     output: true
   

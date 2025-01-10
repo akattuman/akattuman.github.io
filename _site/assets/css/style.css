@@ -36,9 +36,6 @@ html {
   font-size: 13pt;
   line-height: 1.5; }
 
-@media (min-width: 38em) {
-  html {
-    font-size: 13pt; } }
 body {
   color: black;
   background-color: #f9f4f2;
@@ -64,16 +61,13 @@ body {
   Center the page content.
 */
 .container {
-  max-width: 32rem;
+  max-width: 38rem;
   min-width: 28rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 56em) {
-  .container {
-    max-width: 38rem; } }
 a {
   color: #00008B;
   text-decoration: none;
@@ -562,25 +556,17 @@ pre code {
   margin-bottom: 0; }
 
 .writing #date {
-  text-align: center;
+  text-align: left;
   color: #555;
   font-size: 11pt;
   padding-top: 5px;
   padding-bottom: 15px; }
-.writing #markdown-toc {
-  padding-bottom: 20px; }
-  .writing #markdown-toc a {
-    color: #00008B; }
-  .writing #markdown-toc li ul {
-    padding-bottom: 0;
-    margin-bottom: 0; }
 .writing .title {
   padding-top: 0px;
   font-size: 20pt;
-  text-align: center;
+  text-align: left;
   padding-bottom: 0;
   margin-bottom: 0;
-  width: 85%;
   margin-right: auto;
   margin-left: auto; }
 .writing h1 {
@@ -614,11 +600,12 @@ pre code {
   font-size: 12pt; }
   .archive-list li {
     display: flex;
-    justify-content: flex-start;
-    padding: 2px; }
+    align-items: center;
+    padding-bottom: 8px; }
 
 .archive-date {
   color: #555;
-  min-width: 100px;
+  min-width: 90px;
   text-align: right;
-  margin-right: 30px; }
+  margin-right: 20px;
+  font-size: 10pt; }
