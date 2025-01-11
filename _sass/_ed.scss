@@ -42,6 +42,12 @@ html {
   line-height: 1.5;
 }
 
+@media (min-width: 38em) {
+  html {
+    font-size: $regular-font-size;
+  }
+}
+
 body {
   color: $text-color;
   background-color: rgb(249, 244, 242);
@@ -75,12 +81,18 @@ body {
 */
 
 .container {
-  max-width: 38rem;
+  max-width: 32rem;
   min-width: 28rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
+}
+
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
 }
 
 a {

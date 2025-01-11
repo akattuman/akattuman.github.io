@@ -36,6 +36,9 @@ html {
   font-size: 13pt;
   line-height: 1.5; }
 
+@media (min-width: 38em) {
+  html {
+    font-size: 13pt; } }
 body {
   color: black;
   background-color: #f9f4f2;
@@ -61,13 +64,16 @@ body {
   Center the page content.
 */
 .container {
-  max-width: 38rem;
+  max-width: 32rem;
   min-width: 28rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto; }
 
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem; } }
 a {
   color: #00008B;
   text-decoration: none;
