@@ -61,7 +61,7 @@ body {
   Center the page content.
 */
 .container {
-  max-width: 32rem;
+  max-width: 36rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
