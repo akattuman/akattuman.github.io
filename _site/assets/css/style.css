@@ -61,7 +61,7 @@ body {
   Center the page content.
 */
 .container {
-  max-width: 36rem;
+  max-width: 38rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -125,18 +125,14 @@ hr {
 
 /* Quotes */
 blockquote {
-  padding: 0rem 1.5rem 0rem 2rem;
-  margin: 0 0 20px 0;
+  padding: 0rem 0rem 0rem 0.75rem;
+  margin: 0 1rem 1rem 1rem;
   color: black;
   border-left: solid 2px navy; }
 
 blockquote p:last-child {
   margin-bottom: 0; }
 
-@media (min-width: 30em) {
-  blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem; } }
 /* Images */
 img {
   display: block;
@@ -558,6 +554,7 @@ pre code {
   text-align: left;
   color: #555;
   font-size: 11pt;
+  font-style: italic;
   padding-top: 5px;
   padding-bottom: 15px; }
 .writing .title {
@@ -595,12 +592,11 @@ pre code {
 .archive-list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  font-size: 12pt; }
+  margin: 0; }
   .archive-list li {
     display: flex;
     align-items: center;
-    padding-bottom: 8px; }
+    padding-bottom: 6px; }
 
 .archive-date {
   color: #555;
@@ -608,3 +604,12 @@ pre code {
   text-align: right;
   margin-right: 20px;
   font-size: 10pt; }
+
+.note .title {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto; }

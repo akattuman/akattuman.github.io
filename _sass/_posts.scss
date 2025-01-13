@@ -3,6 +3,7 @@
         text-align: left;
         color: #555;
         font-size: 11pt;
+        font-style: italic;
         padding-top: 5px;
         padding-bottom: 15px;
     }
@@ -50,11 +51,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 12pt;
     li {
         display: flex;
         align-items: center;
-        padding-bottom: 8px;
+        padding-bottom: 6px;
     }
 }
 
@@ -64,4 +64,16 @@
     text-align: right;
     margin-right: 20px;
     font-size: 10pt;
+}
+
+.note {
+    .title {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        font-size: 20pt;
+        text-align: center;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

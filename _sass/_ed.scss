@@ -72,7 +72,7 @@ body {
 */
 
 .container {
-  max-width: 36rem;
+  max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -149,8 +149,8 @@ hr {
 
 /* Quotes */
 blockquote {
-  padding: 0rem 1.5rem 0rem 2rem;
-  margin: 0 0 20px 0;
+  padding: 0rem 0rem 0rem 0.75rem;
+  margin: 0 1rem 1rem 1rem;
   color: $text-color;
   border-left: solid 2px navy;
   // font-style: italic;
@@ -158,13 +158,6 @@ blockquote {
 
 blockquote p:last-child {
   margin-bottom: 0;
-}
-
-@media (min-width: 30em) {
-  blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
-  }
 }
 
 /* Images */
